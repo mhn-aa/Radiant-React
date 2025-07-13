@@ -20,6 +20,7 @@ import TerenceMckenna from "./Components/Assets/Terence Mckenna.jpg";
 import axios from "axios";
 import Communication from "./Components/Communication";
 import Coding from "./Components/Coding";
+import Cryptocurrency from "./Components/Cryptocurrency";
 // import Archeology from "./Components/Archeology";
 // import Astrology from "./Components/Astrology";
 // import Philosophy from "./Components/Philosophy";
@@ -49,9 +50,7 @@ function App() {
     console.log("", username, "", password);
 
     axios
-      .post("http://localhost:4000/login", {
-        username,
-        password,
+      .post("http://localhost:4000/login", { username, password,
       })
 
       .then((data) => {
@@ -124,6 +123,9 @@ function App() {
         </Route>
         <Route path="/Coding">
           <Coding />
+        </Route>
+        <Route path="/Cryptocurrency">
+          <Cryptocurrency />
         </Route>
         <Route path="/" exact>
           <div className="body"></div>

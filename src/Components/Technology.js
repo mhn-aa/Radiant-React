@@ -6,6 +6,7 @@ const Technology = () => {
       <h2>Waterjet Pump</h2>
       <p>You have to make sure that the gurards are on while the pump is on.</p>
       <p>Test</p>
+      <p>Test2</p>
     </div>
   );
 };
